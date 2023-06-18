@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Learning Bootstrap v5 with sass</title>
+    <link rel="stylesheet" href="scss/style.scss">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendors/css/glightbox.min.css">
+</head>
+<body>
+
+<!-- START THE NAVBAR SECTION -->
+
+<nav class="navbar navbar-expand-lg navbar-dark menu shaddow fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img class="navbar-brand " src="assets/images/logo.png" alt="logo img"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end " id="navbarNav">
+        <ul class="navbar-nav ">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Faq</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Porfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+        <button type="button" class="rounded-pill btn-rounded">+1 02867583
+            <span><svg class="btn-phone bi bi-telephone-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+              </svg>
+            </span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!--INTRO SECTION--> 
+
+  <section id="home" class="intro-section">
+    <div class="container">
+        <div class="row align-items-center text-white">
+            <div class="col-md-6 intros">
+                <h1 class="display-2">
+                    <span class="display-2--intro">Hey, I'm Patrick</span>
+                    <span class="display-2--description lh-bas">this is a multi-purpose responsive layout created with bootstrap v5. (here your can place your description text)</span>
+                </h1>
+                <button type="button" class="rounded-pill btn-rounded"> Get in touch
+                    <span><i class=" intouch-buttom  fas fa-arrow-right text-white h5"></i></span>
+                </button>
+            </div>
+            <!--start the content video-->
+            <div class="col-md-6 intros text-end">
+                <div class="video-box">
+                    <img class="img-fluid " src="assets/images/arts/intro-section-illustration.png" alt="video illustration">
+                    <a class="glightbox position-absolute top-50 start-50 translate-middle" href=""><span><i class="fas fa-play-circle"></i></span>
+                    <span class="border-animation border-animation--border-1"></span>
+                    <span class="border-animation border-animation--border-2"></span>
+                </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,128L60,144C120,160,240,192,360,170.7C480,149,600,75,720,80C840,85,960,171,1080,170.7C1200,171,1320,85,1380,42.7L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
+  </section>
+
+
+  <!--Start the companies-->
+  <section id="companies" class="companies">
+    <div class="containter">
+        <div class="row text-center">
+            <h4 class="fw-bold lead mb-3">Trusted by companies like</h4>
+            <div class="heading-line mg-5">
+
+
+            </div>
+            <!-- start the companies content -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-lg-2">
+                        <div class="companies__logo-box shaddow-sm"><img src="assets/images/campanies/campany-1.png" alt="Campany 1 logo" title="Campany 1 Logo" class="img-fluid"></div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="companies__logo-box shaddow-sm"><img src="assets/images/campanies/campany-2.png" alt="Campany 2 logo" title="Campany 2 Logo" class="img-fluid"></div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="companies__logo-box shaddow-sm"><img src="assets/images/campanies/campany-3.png" alt="Campany 3 logo" title="Campany 3 Logo" class="img-fluid"></div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="companies__logo-box shaddow-sm"><img src="assets/images/campanies/campany-4.png" alt="Campany 4 logo" title="Campany 4 Logo" class="img-fluid"></div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="companies__logo-box shaddow-sm"><img src="assets/images/campanies/campany-5.png" alt="Campany 5 logo" title="Campany 5 Logo" class="img-fluid"></div>
+                    </div>
+                    <div class="col-md-4 col-lg-2">
+                        <div class="companies__logo-box shaddow-sm"><img src="assets/images/campanies/campany-6.png" alt="Campany 6 logo" title="Campany 6 Logo" class="img-fluid"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+
+  <!-- start section 4 - the Services -->
+      <sections id="serices" class="services">
+         <div class="container">
+            <div class="row text-center">
+              <h1 class="display-3 fw-bold ">Our Services</h1>
+            <div class="heading-line mb-5">
+                
+            </div>
+
+             </div>
+         </div>
+
+    <div class="container">
+        <div class="row pt-2 pb-2 mt-5 mb-3">
+            <div class="col-md-6 border-right">
+                <div class="bg-white p-3">
+                    <h2 class="fw-bold text-capitalize text-center">
+                        Our Services Range From Initial Design To Deployment Anywhere Anytime
+                    </h2>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="bg-white p-4 text-start">
+                    <p class="fw-light">
+                        Lorem ipsum dolor sit amet consectetur architecto magni, dicta maxime laborum temporibus dolorem esse doloremque illo quas nisi enim molestias. Tempore ducimus molestiae in dolore enim.
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 
+  start the content for the services -->
+
+  <div class="container">
+    <!-- start the marketing content -->
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col sm-12 col-xs-12 services mt-4 ">
+            <div class="services__content">
+                <div class="icon d-block "><i class="fas fa-paper-plane"></i></div>
+                <h3 class="display-3--title mt-1">Marketing</h3>
+               
+             <p class="lh-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium aut neque necessitatibus praesentium ex veritatis provident eum obcaecati qui sunt. Perspiciatis doloribus officiis alias fuga tenetur id laudantium?</p>
+             <button type="button" class="rounded-pill btn-rounded border-primary"> Learn More
+                <span><i class=" intouch-buttom  fas fa-arrow-right text-white h5"></i></span>
+            </button>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col sm-12 col-xs-12 services mt-4 text-end">
+            <div class="services__pic">
+                <img src="assets/images/services/service-1.png" alt="marketing illustration" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- start the web development content -->
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col sm-12 col-xs-12 services mt-4 text-start">
+            <div class="services__content">
+                <div class="services__pic">
+                    <img src="assets/images/services/service-2.png" alt="web development illustration" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-md-6 col sm-12 col-xs-12 services mt-4">
+            <div class="services__content"> 
+                 <div class="icon d-block "><i class="fas fa-code"></i></div>
+            <h3 class="display-3--title mt-1">Web Development</h3>
+           
+         <p class="lh-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium aut neque necessitatibus praesentium ex veritatis provident eum obcaecati qui sunt. Perspiciatis doloribus officiis alias fuga tenetur id laudantium?</p>
+         <button type="button" class="rounded-pill btn-rounded border-primary"> Learn More
+            <span><i class=" intouch-buttom  fas fa-arrow-right text-white h5"></i></span>
+        </button></div>
+        </div>
+    </div>
+    <!-- start the cloudhosting -->
+    <div class="row">
+        <div class="col-lg-6 col-md-6 col sm-12 col-xs-12 services mt-4">
+            <div class="services__content">  
+                <div class="icon d-block "><i class="fas fa-cloud-upload-alt"></i></div>
+            <h3 class="display-3--title mt-1">Cloud Hosting</h3>
+           
+         <p class="lh-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium aut neque necessitatibus praesentium ex veritatis provident eum obcaecati qui sunt. Perspiciatis doloribus officiis alias fuga tenetur id laudantium?</p>
+         <button type="button" class="rounded-pill btn-rounded border-primary"> Learn More
+            <span><i class=" intouch-buttom  fas fa-arrow-right text-white h5"></i></span>
+        </button></div>
+        </div>
+        <div class="col-lg-6 col-md-6 col sm-12 col-xs-12 services mt-4 text-end">
+            <div class="services__content">
+                <div class="services__content">
+                    <img src="assets/images/services/service-3.png" alt="Cloud hosting illustration" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+  </div>
+      </sections>
+
+
+  <!-- start section 5 - testimonials -->
+  <section id="testimonials" class="testimonials">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,128L34.3,128C68.6,128,137,128,206,106.7C274.3,85,343,43,411,37.3C480,32,549,64,617,117.3C685.7,171,754,245,823,250.7C891.4,256,960,192,1029,154.7C1097.1,117,1166,107,1234,122.7C1302.9,139,1371,181,1406,202.7L1440,224L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
+    <div class="container">
+        <div class="row text-center text-white">
+            <h1 class="display-3 fw-bold">Testimonials</h1>
+            <hr style="width:100px;height:3px" class="mx-auto">
+            <p class="lead pt-1">What our clients are saying</p>
+        </div>
+    </div>
+
+
+    <!-- start the caroussel -->
+            <div class="row align-items-center">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+            
+            <div class="carousel-inner">
+
+                <!-- CAROUSSEL ITEM 1 -->
+              <div class="carousel-item active">
+             <div class="testimonials__card">
+              <p class="lh-lg">
+                <i class="fas fa-quote-left"></i>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, corrupti totam aliquam sed obcaecati beatae impedit vitae odio inventore deleniti ipsa?
+                </p>
+                <i class="fas fa-quote-right"></i>
+                <div class=" ratings p-1 ">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+              
+             </div>
+                
+               
+                <!-- client <picture></picture> -->
+                <div class="testimonials__picture">
+                    <img src="assets/images/testimonials/client-1.jpg" alt="client - picture" class="img-fluid rounded-circle">
+                  
+                </div>
+                <!-- client name -->
+                <div class="testimonials__name">
+                    <h3>Patrick Maverick</h3>
+                    <p class="fw-light">CEO & FOUNDER</p>
+                </div>
+            </div>
+            <!-- CAROUSSEL ITEM 2 -->
+            <div class="carousel-item ">
+                <div class="testimonials__card">
+                 <p class="lh-lg">
+                   <i class="fas fa-quote-left"></i>
+                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, corrupti totam aliquam sed obcaecati beatae impedit vitae odio inventore deleniti ipsa?
+                   <i class="fas fa-quote-right"></i>
+                 </p>
+                   <div class=" ratings p-1 ">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                   </div>
+              
+                </div>
+                   
+                  
+                   <!-- client <picture></picture> -->
+                   <div class="testimonials__picture">
+                       <img src="assets/images/testimonials/client-2.jpg" alt="client - picture" class="img-fluid rounded-circle ">
+                     
+                   </div>
+                   <!-- client name -->
+                   <div class="testimonials__name">
+                       <h3>JOY MARETE</h3>
+                       <p class="fw-light">FINANCE MANAGER</p>
+                   </div>
+               </div>
+               <!-- CAOUSSEL ITEM 3 -->
+
+               <div class="carousel-item">
+                <div class="testimonials__card">
+                 <p class="lh-lg">
+                   <i class="fas fa-quote-left"></i>
+                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, corrupti totam aliquam sed obcaecati beatae impedit vitae odio inventore deleniti ipsa?
+                   <i class="fas fa-quote-right"></i>
+                 </p>
+                   <div class=" ratings p-1 ">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                   </div>
+              
+                </div>
+                   
+                  
+                   <!-- client <picture></picture> -->
+                   <div class="testimonials__picture">
+                       <img src="assets/images/testimonials/client-3.jpg" alt="client - picture" class="img-fluid rounded-circle">
+                     
+                   </div>
+                   <!-- client name -->
+                   <div class="testimonials__name">
+                       <h3>Claire belle More</h3>
+                       <p class="fw-light">Global Brand Manager</p>
+                   </div>
+               </div>
+               <!-- CAROUSSEL ITEM 4 -->
+
+               <div class="carousel-item ">
+                <div class="testimonials__card">
+                 <p class="lh-lg">
+                   <i class="fas fa-quote-left"></i>
+                   Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium, corrupti totam aliquam sed obcaecati beatae impedit vitae odio inventore deleniti ipsa?
+                   <i class="fas fa-quote-right"></i>
+                  </p>
+                   <div class=" ratings p-1 ">
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                       <i class="fas fa-star"></i>
+                   </div>
+              
+                </div>
+                   
+                  
+                   <!-- client <picture></picture> -->
+                   <div class="testimonials__picture">
+                       <img src="assets/images/testimonials/client-4.jpg" alt="client - picture" class="img-fluid rounded-circle">
+                     
+                   </div>
+                   <!-- client name -->
+                   <div class="testimonials__name">
+                       <h3>Zelinski Kourtney</h3>
+                       <p class="fw-light">CEO & FOUNDER</p>
+                   </div>
+               </div>
+             
+           
+        </div>
+             
+              </div>
+            </div>
+           <div class="text-center">
+            <button class="btn btn-outline-light fas fa-long-arrow-alt-left " type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              
+            </button>
+            <button class="btn btn-outline-light fas fa-long-arrow-alt-right text-center" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+         
+            </button>
+           
+          
+          </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,256L34.3,245.3C68.6,235,137,213,206,181.3C274.3,149,343,107,411,106.7C480,107,549,149,617,181.3C685.7,213,754,235,823,229.3C891.4,224,960,192,1029,176C1097.1,160,1166,160,1234,170.7C1302.9,181,1371,203,1406,213.3L1440,224L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+  </section>
+  <section id="faq" class="faq">
+    <div class="container">
+        <div class="row text-center">
+            <h1 class="display-3 fw-bold text-uppercase">
+                FAQ
+            </h1>
+            <div class="heading-line"></div>
+            <p class="lead">
+                frequently asked questions, get knowledge befere hand</p>
+        </div>
+      <!-- accordium content -->
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <div class="accordion" id="accordionExample">
+
+                    <!-- accordiom item 1 -->
+                    <div class="accordion-item shadow mb-3">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          What are the main feautures?
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- accordiom item 2 -->
+                    <div class="accordion-item shadow mb-3">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                         Do I have to pay after trial?
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- accordiom item 3 -->
+                    <div class="accordion-item shadow mb-3">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                          How can I get started after trial?
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- accordiom item 4 -->
+                    <div class="accordion-item shadow mb-3">
+                        <h2 class="accordion-header" id="headingThree">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Can I be refunded if am not satisfied?
+                          </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                          <div class="accordion-body">
+                            <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                          </div>
+                        </div>
+                      </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- START SECTION 7 - THE PORTFOLIO -->
+
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+        <div class="row text-center mt-5">
+
+            <h1 class="display-3 fw-bold text-capitalize">
+                Latest Work
+            </h1>
+            <div class="heading-line"></div>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, voluptas.</p>
+        </div>
+
+        <!-- FILTER BUTTONS -->
+        <div class="row mt-5 mb-4 g-3 text-center">
+            <div class="col-md-12">
+                <button class="btn btn-outline-primary" type="button">All</button>
+                <button class="btn btn-outline-primary" type="button">Websites</button>
+                <button class="btn btn-outline-primary" type="button">Design</button>
+                <button class="btn btn-outline-primary" type="button">Mockup</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-box shadow">
+                    <img src="assets/images/portfolio/portfolio-1.jpg" alt="portfolio 1 image" title="portfolio 1 picture" class="img-fluid">
+                    <div class="portfolio-info">
+                        <div class="caption">
+                            <h4>project name goes here 1</h4>
+                            <p>category project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-box shadow">
+                    <img src="assets/images/portfolio/portfolio-2.jpg" alt="portfolio 2 image" title="portfolio 2 picture" class="img-fluid">
+                    <div class="portfolio-info">
+                        <div class="caption">
+                            <h4>project name goes here 2</h4>
+                            <p>category project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-box shadow">
+                    <img src="assets/images/portfolio/portfolio-3.jpg" alt="portfolio 3 image" title="portfolio 3 picture" class="img-fluid">
+                    <div class="portfolio-info">
+                        <div class="caption">
+                            <h4>project name goes here 3</h4>
+                            <p>category project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-box shadow">
+                    <img src="assets/images/portfolio/portfolio-4.jpg" alt="portfolio 4 image" title="portfolio 4 picture" class="img-fluid">
+                    <div class="portfolio-info">
+                        <div class="caption">
+                            <h4>project name goes here 4</h4>
+                            <p>category project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-box shadow">
+                    <img src="assets/images/portfolio/portfolio-5.jpg" alt="portfolio 5 image" title="portfolio 5 picture" class="img-fluid">
+                    <div class="portfolio-info">
+                        <div class="caption">
+                            <h4>project name goes here 5</h4>
+                            <p>category project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-box shadow">
+                    <img src="assets/images/portfolio/portfolio-6.jpg" alt="portfolio 6 image" title="portfolio 6 picture" class="img-fluid">
+                    <div class="portfolio-info">
+                        <div class="caption">
+                            <h4>project name goes here 6</h4>
+                            <p>category project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-box shadow">
+                    <img src="assets/images/portfolio/portfolio-7.jpg" alt="portfolio 7 image" title="portfolio 7 picture" class="img-fluid">
+                    <div class="portfolio-info">
+                        <div class="caption">
+                            <h4>project name goes here 7</h4>
+                            <p>category project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-box shadow">
+                    <img src="assets/images/portfolio/portfolio-8.jpg" alt="portfolio 8 image" title="portfolio 8 picture" class="img-fluid">
+                    <div class="portfolio-info">
+                        <div class="caption">
+                            <h4>project name goes here 8</h4>
+                            <p>category project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="portfolio-box shadow">
+                    <img src="assets/images/portfolio/portfolio-9.jpg" alt="portfolio 9 image" title="portfolio 9 picture" class="img-fluid">
+                    <div class="portfolio-info">
+                        <div class="caption">
+                            <h4>project name goes here 9</h4>
+                            <p>category project</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+
+  <!-- SECTION 8 - GET STARTED -->
+
+  <section id="contact" class="get-started">
+    <div class="container">
+        <div class="row text-center">
+            <h1 class="display-3 fw-bold text-capitalize">Get started</h1>
+            <div class="heading-line"></div>
+            <p class="lh-lg">Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+
+        </div>
+
+        <div class="row text-white">
+            <div class="col-12 col-lg-6 gradient shadow p-3">
+              <div class="cta-info w-100">
+                 <h4 class="display-4 fw-bold">100% Satisfaction Guaranteed</h4>
+                 <p class="lh-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Et, at ipsa. Facere, perspiciatis.
+                 </p>
+                 <h3 class="display-3--brief">What will be the next step</h3>
+                 <ul class="cta-info__list">
+                   <li>We'll prepare the proposal.</li>
+                   <li>we'll discuss it together.</li>
+                   <li>let's start the discussion.</li>
+                  </ul>
+
+               </div>
+            </div>
+            <div class="col-12 col-lg-6 bg-white shadow p-3">
+                <div class="form w-100 pb-2">
+                    <h4 class="display-3--title mb-5">
+                        Start your project
+                    </h4>
+
+                    <form action="#" class="row">
+                        <div class="col-lg-6 col-md-6 mb-3">
+                         <input type="text" placeholder="first name" id="inputFirstName" class="shadow form-control-lg form-control">
+                        
+                        </div>
+                        <div class="col-lg-6 col-md-6  mb-3">
+                         <input type="text" placeholder="Last name" id="inputLastName" class="shadow form-control-lg form-control">
+                        
+                        </div>
+                        <div class="col-lg-12 mb-3"><input type="text" placeholder="email" id="inputEmail" class="shadow form-control-lg form-control">
+                        
+                        </div>
+                      <div class="col-lg-12 mb-3">
+                        <textarea name="message" id="message" placeholder="Message" cols="30" rows="10" class="shadow form-control-lg form-control"></textarea>
+                      </div>
+                      <div class="text-center d-grid mt-1">
+                        <button tupe="button" class="btn btn-primary rounded-pill pt-3 pb-3"> 
+                            Submit
+                            <i class="fas fa-paper-plane"></i>
+
+                        </button>
+                       
+                      </div>
+                    </form>
+
+                </div>
+    
+        </div>
+    </div>
+  </section>
+
+
+  <!-- START SECTION 9 - FOOTER -->
+
+
+
+
+  
+   
+  <script src="assets/vendors/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+        const lightbox = GLightbox({
+          'touchNavigation': true,
+          'href': 'https://www.youtube.com/watch?v=J9lS14nM1xg',
+          'type': 'video',
+          'source': 'youtube', //vimeo, youtube or local
+          'width': 900,
+          'autoPlayVideos': 'true',
+  });
+      
+      </script>
+
+
+
+    </script>
+   
+    <script src="assets/vendors/js/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/fc1961e3d0.js" crossorigin="anonymous"></script>
+</body>
+</html>
